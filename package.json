@@ -7,10 +7,12 @@
     "editor": "vim"
   },
   "scripts": {
+    "test": "mocha test",
     "clear": "find . -name \"*solution.js\" -exec $SHELL -c 'rm $0' {} \\;",
     "reprompt": "find . -name \"*.prompt.js\" -exec $SHELL -c 'mv $0 ${0/\\.prompt/prompt}' '{}' \\;",
-    "reset": "rm ./test/*.js; npm run reprompt && npm run clear",
-    "test": "mocha test",
+    "reset": "rm ./test/*.js; npm run --silent reprompt && npm run --silent clear",
+    "setup": "$SHELL .setup-script",
+    "update": "git stash; git pull --rebase upstream master; git stash apply;",
     "start": "$SHELL .start-script"
   },
   "keywords": [],

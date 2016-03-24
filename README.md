@@ -10,12 +10,16 @@ Bites of practice to have with your coffee in the morning.
 
 <a name="about"/>
 ## About
-The purpose of this repo is to make practicing simple. Biscuits provides interview-style questions in the comfort of your terminal/text editor. No more hunting down interview questions or finagling with slow web IDEs. Just set everything up, hit `npm start` and start practicing.
+The purpose of this repo is to make practicing simple. Biscuits provides interview-style questions in the comfort of your terminal/text editor. No more hunting down interview questions or finagling with slow web IDEs. Just set everything up with `npm run setup`, hit `npm start` and start practicing.
 
 **On Testing:** In order to practice coming up with your own test cases, Biscuits recommends that you **write your own tests**. To encourage this, a bare-bones test template is provided for you in the home directory. However, you can run `npm start -- spec` to preload some tests for your prompt if you wish to work with them.
 
 <a name="setup"/>
 ## Setup
+`npm run setup`
+An interactive shell will prompt you for your editor of choice, set up a `remote upstream` and run `npm install` for you.
+
+### Manual Setup
 1. `npm install`
 2. For random-prompt functionality: `brew install coreutils`. Biscuits uses GNU's `shuf` command.
 3. Specify your editor using `npm config set biscuits:editor EDITORCOMMAND`. E.g: `subl` or `atom`. By default, it is `vim`.

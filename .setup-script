@@ -1,0 +1,16 @@
+echo "What editor command would you like to use? e.g: subl, atom. (vim)";
+
+read EDITOR;
+
+echo "Setting editor...";
+npm config set biscuits:editor $EDITOR;
+
+echo "Adding upstream for future updates...";
+git remote add upstream https://github.com/banunatina/biscuits.git;
+
+echo "Running installation...";
+npm install;
+
+echo "DONE! Enjoy your biscuits.";
+
+
