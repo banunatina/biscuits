@@ -1,0 +1,6 @@
+if [ $# -ne 1 ]; 
+  then $npm_package_config_editor $(gshuf -n1 -e ./prompts/*/prompt.js);
+elif [[ $1 == "spec" ]];
+  then prompt=$(echo `gshuf -n1 -e ./specs/*` | sed 's/\\.\\/specs\\///' | sed 's/.\\{3\\}$//');clear;cp prompts/$prompt/prompt.js prompts/$prompt/solution.js;mv specs/$prompt.js test/; $npm_package_config_editor prompts/$prompt/solution.js
+fi
+
