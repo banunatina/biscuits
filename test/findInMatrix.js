@@ -1,5 +1,5 @@
 var expect = require('chai').expect;
-var findElement = require('../findInMatrix/solution.js');
+var findElement = require('../prompts/findInMatrix/solution.js');
 
 describe('findInMatrix', function() {
   var matrix, matrix2;
