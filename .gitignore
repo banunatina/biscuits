@@ -1,5 +1,6 @@
 # Ignore solutions
 solution.js
 
-# Ignore node_modules
+# Ignore node_modules and .DS_Store
 node_modules/
+.DS_Store
