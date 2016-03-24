@@ -1,6 +1,6 @@
 if [ $# -ne 1 ]; 
   then 
-    PROMPT=$(echo `gshuf -n1 -e ./prompts/*/prompt.js` | sed 's/\.\/prompts\///'| sed 's/.\{9\}$//');
+    PROMPT=$(echo `gshuf -n1 -e ./prompts/*/prompt.js` | sed 's/\.\/prompts\///'| sed 's/.\{10\}$//');
     cp ./prompts/$PROMPT/prompt.js ./prompts/$PROMPT/solution.js;
     mv ./prompts/$PROMPT/prompt.js ./prompts/$PROMPT/.prompt.js;
     clear;
