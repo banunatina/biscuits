@@ -1,5 +1,6 @@
 # Ignore solutions
 solution.js
+#.prompt.js
 
 # Ignore node_modules and .DS_Store
 node_modules/

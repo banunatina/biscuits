@@ -1,13 +1,15 @@
 {
   "name": "biscuits",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "config": {
     "editor": "vim"
   },
   "scripts": {
-    "reset": "mv ./test/*.js ./specs/; rm $(find . -name 'solution.js')",
+    "clear": "find . -name \"*solution.js\" -exec $SHELL -c 'rm $0' {} \\;",
+    "reprompt": "find . -name \"*.prompt.js\" -exec $SHELL -c 'mv $0 ${0/\\.prompt/prompt}' '{}' \\;",
+    "reset": "rm ./test/*.js; npm run reprompt && npm run clear",
     "test": "mocha test",
     "start": "$SHELL .start-script"
   },
