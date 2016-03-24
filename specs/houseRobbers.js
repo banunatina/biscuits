@@ -1,5 +1,5 @@
 var expect = require('chai').expect;
-var houseRobbers = require('../prompts/houseRobbers/prompt');
+var houseRobbers = require('../prompts/houseRobbers/solution');
 
 describe('house Robbers', function (done) {
   it('should find the max amount of profit', function (done) {

@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clear": "rm -f ./test/*.js",
     "test": "mocha test",
-    "start": "vim $(gshuf -n1 -e ./prompts/*/prompt.js)"
+    "start": "prompt=$(echo `gshuf -n1 -e ./prompts/*/` | sed 's/\\.\\/prompts\\///' | sed 's/.\\{1\\}$//');clear;cp prompts/$prompt/prompt.js prompts/$prompt/solution.js;cp specs/$prompt.js test/$prompt.js; vim prompts/$prompt/solution.js"
   },
   "keywords": [],
   "author": "Banun Atina Idris <banun.a.idris@gmail.com> (http://bthehuman.com/)",

@@ -1,5 +1,5 @@
 var expect = require('chai').expect;
-var snakeTraversal = require('../prompts/snakeTraversal/prompt');
+var snakeTraversal = require('../prompts/snakeTraversal/solution');
 
 describe('snakeTraversal', function (done) {
 
