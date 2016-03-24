@@ -15,7 +15,7 @@ Bites of practice to have with your coffee in the morning.
 
   *NOTENOTE: `solution.js` is included in .gitignore file. To save solutions, comment or remove this line.*
 
-2. **Write your tests** The purpose of this repo is to practice interview-style questions, including coming up with your own test cases. There is a bare-bones test template provided for you in the home directory.
+2. **Write your tests.** The purpose of this repo is to practice interview-style questions, including coming up with your own test cases. There is a bare-bones test template provided for you in the home directory.
 3. The tests should require a `solution.js` in each prompt folder. Each test should be named after its prompt.
 4. `npm test` to run tests.
 

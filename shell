@@ -1,0 +1,6 @@
+#! /bin/sh
+echo $SHELL
+
+if [[ $1 == "spec" ]];
+  then echo 'Got it'
+fi
