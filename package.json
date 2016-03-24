@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "config": {"editor": "vim"},
   "scripts": {
     "test": "mocha test",
-    "start": "vim $(gshuf -n1 -e ./prompts/*/prompt.js)",
-    "shelltest": "$SHELL shell"
+    "start": "$SHELL .start-script"
   },
   "keywords": [],
   "author": "Banun Atina Idris <banun.a.idris@gmail.com> (http://bthehuman.com/)",

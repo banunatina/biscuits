@@ -1,0 +1,5 @@
+if [ $# -ne 1 ]; 
+  then $npm_package_config_editor $(gshuf -n1 -e ./prompts/*/prompt.js);
+elif [[ $1 == "spec" ]];
+  then echo 'Got it'
+fi
