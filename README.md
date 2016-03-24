@@ -18,7 +18,7 @@ The purpose of this repo is to make practicing simple. Biscuits provides intervi
 ## Setup
 1. `npm install`
 2. For random-prompt functionality: `brew install coreutils`. Biscuits uses GNU's `shuf` command.
-3. Specify your editor using `npm set config editor:EDITORCOMMAND`. E.g: `subl` or `atom`. By default, it is `vim`.
+3. Specify your editor using `npm config set biscuits:editor EDITORCOMMAND`. E.g: `subl` or `atom`. By default, it is `vim`.
 
 <a name="usage"/>
 ## Using Biscuits 
