@@ -14,5 +14,12 @@
   "devDependencies": {
     "chai": "3.5.0",
     "mocha": "2.4.5"
-  }
+  },
+  "contributors": [
+    {
+      "name" : "Yilen Pan",
+      "email" : "yilen.pan@gmail.com",
+      "url" : "http://yilen.com"
+    }
+  ]
 }
