@@ -20,6 +20,7 @@
   Find the shortest path from point 'a' to 'e'
 
 */
+// Get pre-written data structures
 var ds = require('../../ds');
 var Graph = ds.Graph;
 

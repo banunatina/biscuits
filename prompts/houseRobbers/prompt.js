@@ -9,7 +9,7 @@
 // if I rob house 'b', I can't rob a or c
 // if I rob house 'c', I can't rob house b
 //
-// Your goal is to tell me the max dollar amount that I can make
+// Your goal is to tell me the maximum dollar amount that I can make
 //
 /////////////////////////////////////////////////////////////
 

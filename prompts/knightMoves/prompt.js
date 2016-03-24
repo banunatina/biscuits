@@ -13,6 +13,7 @@ with the knight remaining on the board every move?
 ex. knightMoves([1, 0], 5, 2)
 ----> 16
 */
+
 var knightMoves = function (start, n, m) {
   // TODO: Implement me!
 };

@@ -10,8 +10,6 @@
 //
 /////////////////////////////////////////////////////////////
 
-
-
 var largestContiguousSum = function (array) {
   // TODO: Implement
 };

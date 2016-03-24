@@ -9,7 +9,6 @@
 // Solve this with dynamic programming
 /////////////////////////////////////////////////////////////
 
-
 exports.countPaths = function (matrix, row, col) {
   // TODO: Solve me
 };
