@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "reset": "mv ./test/*.js ./specs/; rm $(find . -name 'solution.js')",
     "test": "mocha test",
-    "start": "vim $(gshuf -n1 -e ./prompts/*/prompt.js)"
+    "start": "prompt=$(echo `gshuf -n1 -e ./specs/*` | sed 's/\\.\\/specs\\///' | sed 's/.\\{3\\}$//');clear;cp prompts/$prompt/prompt.js prompts/$prompt/solution.js;mv specs/$prompt.js test/; vim prompts/$prompt/solution.js"
   },
   "keywords": [],
   "author": "Banun Atina Idris <banun.a.idris@gmail.com> (http://bthehuman.com/)",
@@ -13,5 +14,12 @@
   "devDependencies": {
     "chai": "3.5.0",
     "mocha": "2.4.5"
-  }
+  },
+  "contributors": [
+    {
+      "name" : "Yilen Pan",
+      "email" : "yilen.pan@gmail.com",
+      "url" : "http://yilen.com"
+    }
+  ]
 }
