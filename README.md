@@ -1,4 +1,4 @@
-![Biscuits-Icon](/images/128.png?raw=true)
+![Biscuits-Banner](/images/128-banner.png?raw=true)
 # Biscuits
 Bites of practice to have with your coffee in the morning.
 
@@ -34,6 +34,7 @@ The purpose of this repo is to make practicing simple. Biscuits provides intervi
 <a name="contributing"/>
 ## Contributing
 *IMPORTANT: Please create a new branch for each new pull request you submit and submit it to the master branch*
+
 1. New prompts should be in their own folder in the `prompts/` directory.
 2. The prompt itself should be in a .js file named `prompt.js`. The function should be exported via CommonJS for testing purposes.
 3. Write tests for a particular prompt in the `spec/` directory
