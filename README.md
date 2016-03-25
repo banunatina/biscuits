@@ -33,7 +33,7 @@ An interactive shell will prompt you for your editor of choice, set up a `remote
 4. The tests should require a `solution.js` in each prompt folder. Each test should be named after its prompt.
 5. `npm test` to run all tests.
 6. `npm run reset` to remove all solution files and test files, and retrieve prompts.
-7. `npm run update` will update Biscuits by `stash`ing any unstaged changes, performing a `pull --rebase` to upstream, and reapplying stashed changes.
+7. `npm run update` will update Biscuits by `stash`ing any unstaged changes, performing a `pull --rebase` to upstream, and reapplying stashed changes. **Remember to update before using.**
 7. `npm run reprompt` to retrieve prompt files.
 *NOTE: `solution.js` is included in .gitignore file. To save solutions, comment or remove this line.*
 
