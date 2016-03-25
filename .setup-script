@@ -8,6 +8,9 @@ npm config set biscuits:editor $EDITOR;
 echo "Adding upstream for future updates...";
 git remote add upstream https://github.com/banunatina/biscuits.git;
 
+echo "Installing coreutils using homebrew..."
+brew install coreutils;
+
 echo "Running installation...";
 npm install;
 
