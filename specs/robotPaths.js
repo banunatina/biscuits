@@ -19,8 +19,10 @@ var testMatrix = range(5, range(5, 0));
 describe('robot paths', function (done) {
   it('should count paths', function (done) {
     expect(countPaths(testMatrix).to.equal(70);
+    done();
   });
   xit('should count paths dynamically', function (done) {
     expect(countPathsDynamic(testMatrix).to.equal(70);
+    done();
   });
 });

@@ -13,5 +13,6 @@ describe('infixCalc', function (done) {
       return infixCalc(infix) === eval(infix);
     });
     expect(truth).to.equal(true);
+    done();
   });
 });
