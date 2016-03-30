@@ -47,5 +47,6 @@ describe('sudoku solver', function (done) {
       [ 7, 2, 3, 6, 9, 1, 5, 8, 4 ],
       [ 4, 6, 9, 5, 8, 7, 3, 1, 2 ] ];
     expect(sudokuSolver(board)).to.deep.equal(solution);
+    done();
   });
 });

@@ -18,6 +18,7 @@ describe('zombiePaths', function (done) {
       totalWeight: 305,
       usedBlaster: true };
     expect(zombiePaths(testCase, 'a', 'e')).to.deep.equal(expected);
+    done();
   });
 
   it('should find the shortest path from a to e', function (done) {
@@ -33,5 +34,6 @@ describe('zombiePaths', function (done) {
       totalWeight: 280,
       usedBlaster: true };
     expect(zombiePaths(testCase, 'a', 'e')).to.deep.equal(expected);
+    done();
   });
 });
