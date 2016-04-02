@@ -100,3 +100,4 @@ function comboSum (str, target) {
   innerFn(str.split(''), []);
   return results;
 }
+module.exports = comboSum;
