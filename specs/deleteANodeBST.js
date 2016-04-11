@@ -9,11 +9,13 @@ describe('Delete a node', function (done) {
       tree.insert(value);
       return tree;
     }, new BST());
+    done();
   });
 
   it('should delete the root node', function (done) {
     deleteNode(bst.root);
     var expected = bst.root.value === 14 || bst.root.value === 10;
     expect(expected).to.equal(true);
+    done();
   });
 });
