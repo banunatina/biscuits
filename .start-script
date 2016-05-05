@@ -10,7 +10,7 @@ elif [[ $1 == "spec" ]];
     PROMPT=$(echo `gshuf -n1 -e ./specs/*` | sed 's/\.\/specs\///' | sed 's/.\{3\}$//');
     cp ./prompts/$PROMPT/prompt.js ./prompts/$PROMPT/solution.js;
     mv ./prompts/$PROMPT/prompt.js ./prompts/$PROMPT/.prompt.js;
-    cp ./specs/$PROMPT.js test/; 
+    cp ./specs/$PROMPT.js ./test/; 
     clear;
     $npm_package_config_editor prompts/$PROMPT/solution.js
 fi
